@@ -1,0 +1,11 @@
+<div class="main__menu">
+	<menu class="menu">
+		<li class="menu__item" ng-repeat="item in menuList" ng-class="{'menu__item--active': item.isActive, {{item.slug}}: true}">
+			<a href="{{'#/' + item.uri}}">
+				<i class="icon" ng-class="item.iconClassName"></i>
+				<span class="menu__label">{{item.title}}</span>
+			</a>
+		</li>
+	</menu>
+	 <a href="#/" class="main__menu__back"><i class="icon icon--arrow-left"></i><span class="menu__label">Fechar</span></a>
+</div>

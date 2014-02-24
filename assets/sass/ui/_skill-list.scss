@@ -1,0 +1,31 @@
+.skill-list {
+	display: block;
+
+	padding: 0 0 6em 0;
+}
+
+	.skill-list__title {
+	}
+
+	.skill-list__item {
+		display: inline-table;
+
+		width: 100%;
+
+		margin-bottom: 1em;
+	}
+
+		.skill-list__item__title {
+			small {
+				font-size: 0.7em;
+				font-weight: 300;
+			}
+		}
+
+		.skill-list__item__knowbar {
+			display: block;
+
+			height: 0.3em;
+
+			background: #fff;
+		}

@@ -1,0 +1,10 @@
+<div class="view view--about">
+	<header class="view__header">
+		<h1 class="view__title">Sobre</h1>
+	</header>
+	<div class="view__content" ng-scrollbar rebuild-on="windowResize">
+		<p>Há 3 anos trabalhando com desenvolvimento web, minha introdução à programação começa aos 13 anos. Que por curiosidade e desejo, através de fóruns e apostilas da internet, passei a aprender html, css, js e php. Entrei para a Escola Técnica Estadual República (FAETEC Quintino), 15ª colocação, para o curso de Técnico em Informática para prosseguir o que já era de meu interesse.</p>
+		<p>Pratiquei em estágio, durante 1 ano na Conecte Estúdio Design, meus conhecimentos e adquiri novos, me inserindo rapidamente no mercado. Em seguida ﬁz trabalhos como freela e executei projetos de empreendedorismo com outros entusiastas, não muito bem sucedidos, onde adquiri maturidade e conhecimento proﬁssional.</p>
+		<p>Hoje, tenho foco no estudo de desenvolvimento de sistemas principalmente através de novas tecnologias como Sockets e Restful. Usando e aplicando principalmente React, Laravel e AngularJs, que é onde tenho conduzido meus estudos.</p>
+	</div>
+</div>

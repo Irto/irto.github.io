@@ -1,0 +1,84 @@
+<div class="view view--skills">
+	<header class="view__header">
+		<h1 class="view__title">Skills</h1>
+		<p class="lead">Um pouco sobre o que eu sei, entre parênteses é o que ínclui àquela skill, e uma barra análoga ao conhecimento atual.</p>
+	</header>
+	<div class="view__content" ng-scrollbar rebuild-on="windowResize">
+		<div class="skill-list">
+			<h2 class="skill-list__title">Front-end</h2>
+			<div class="skill-list__item">
+				<h3 class="skill-list__item__title">HTML5</h3>
+				<div class="skill-list__item__knowbar" style="width: 82%"></div>
+			</div>
+			<div class="skill-list__item">
+				<h3 class="skill-list__item__title">CSS3 <small>(SASS, Compass, Inuit.css, BEM Methodology)</small></h3>
+				<div class="skill-list__item__knowbar" style="width: 92%"></div>
+			</div>
+			<div class="skill-list__item">
+				<h3 class="skill-list__item__title">JavaScript <small>(jQuery, AngularJS)</small></h3>
+				<div class="skill-list__item__knowbar" style="width: 68%"></div>
+			</div>
+			<h2 class="skill-list__title">Back-end</h2>
+			<div class="skill-list__item">
+				<h3 class="skill-list__item__title">PHP5 <small>(OOP, MVC, Laravel, React
+)</small></h3>
+				<div class="skill-list__item__knowbar" style="width: 90%"></div>
+			</div>
+			<div class="skill-list__item">
+				<h3 class="skill-list__item__title">BD <small>(MongoDB, MySQL
+)</small></h3>
+				<div class="skill-list__item__knowbar" style="width: 76%"></div>
+			</div>
+			<div class="skill-list__item">
+				<h3 class="skill-list__item__title">CMS <small>(Wordpress
+)</small></h3>
+				<div class="skill-list__item__knowbar" style="width: 69%"></div>
+			</div>
+			<div class="skill-list__item">
+				<h3 class="skill-list__item__title">E-Commerce <small>(OpenCart, Integração de pagamento
+)</small></h3>
+				<div class="skill-list__item__knowbar" style="width: 78%"></div>
+			</div>
+			<h2 class="skill-list__title">Geral</h2>
+			<div class="skill-list__item">
+				<h3 class="skill-list__item__title">Versionamento <small>(GIT)</small></h3>
+				<div class="skill-list__item__knowbar" style="width: 68%"></div>
+			</div>
+			<div class="skill-list__item">
+				<h3 class="skill-list__item__title">OS <small>(GNU\Linux - Ubuntu\ElementaryOS, Windows)</small></h3>
+				<div class="skill-list__item__knowbar" style="width: 92%"></div>
+			</div>
+			<div class="skill-list__item">
+				<h3 class="skill-list__item__title">IDE/Editor <small>(Sublime, Eclipse, VIM
+)</small></h3>
+				<div class="skill-list__item__knowbar" style="width: 67%"></div>
+			</div>
+			<div class="skill-list__item">
+				<h3 class="skill-list__item__title">Imagens e Vetores <small>(Photoshop, Ilustrator, Inkscape, GIMP)</small></h3>
+				<div class="skill-list__item__knowbar" style="width: 82%"></div>
+			</div>
+			<div class="skill-list__item">
+				<h3 class="skill-list__item__title">Inglês <small>(Leitura e Escrita)</small></h3>
+				<div class="skill-list__item__knowbar" style="width: 57%"></div>
+			</div>
+			<h2 class="skill-list__title">Infraestrutura</h2>
+			<div class="skill-list__item">
+				<h3 class="skill-list__item__title">Linux <small>(CentOS, Ubuntu Server)</small></h3>
+				<div class="skill-list__item__knowbar" style="width: 72%"></div>
+			</div>
+			<div class="skill-list__item">
+				<h3 class="skill-list__item__title">Painel <small>(cPanel\WHM)</small></h3>
+				<div class="skill-list__item__knowbar" style="width: 92%"></div>
+			</div>
+			<div class="skill-list__item">
+				<h3 class="skill-list__item__title">VPS <small>(Deploy, Setup
+)</small></h3>
+				<div class="skill-list__item__knowbar" style="width: 76%"></div>
+			</div>
+			<div class="skill-list__item">
+				<h3 class="skill-list__item__title">Serviços <small>(Apache, PHP, MySQL, MongoDB, GIT)</small></h3>
+				<div class="skill-list__item__knowbar" style="width: 85%"></div>
+			</div>
+		</div>
+	</div>
+</div>
