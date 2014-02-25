@@ -28,18 +28,21 @@
 	%main__pages {
 		position: relative;
 
-		display: block;
+		display: table;
 
 		width: 100%;
-		height: 100%;
-
-		overflow: hidden;
 	}
 
 	.main__header {
 		@extend %main__pages;
 
+		display: block;
+
+		height: 100%;
+
 		padding: 9% 0 12%;
+
+		overflow: hidden;
 
 		background: $a-main;
 	}
