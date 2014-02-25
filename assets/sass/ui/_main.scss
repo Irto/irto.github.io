@@ -1,6 +1,11 @@
 .main {
 	font-size: 16px;
 
+	padding-top: 0.5em;
+
+	background-image: inline-image('background.svg');
+	background-size: 100% auto;
+
 	@include media-query(desk){
 		font-size: 14px;
 	}
@@ -47,7 +52,7 @@
 		small {
 			display: block;
 
-			margin: 7.8% 0 0 0;
+			margin: 5% 0 2.5% 0;
 
 			font-size: 0.24em;
 			color: $a-contrast;
@@ -61,7 +66,7 @@
 	.main__content {
 		@extend %main__pages;
 
-		padding: 5% 3% 9%;
+		padding: 8em 3% 8em;
 
 		color: $a-contrast;
 
@@ -88,7 +93,9 @@
 
 		%main__title {
 			font-family: Montserrat;
-			line-height: 1.1em;
+			line-height: 1.3em;
+
+			margin-bottom: 1em;
 		}
 
 		h1 {
