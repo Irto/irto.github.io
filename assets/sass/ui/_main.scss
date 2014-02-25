@@ -8,8 +8,12 @@
 	background-image: inline-image('background.svg');
 	background-size: 100% auto;
 
+	@include media-query(desk-wide){
+		font-size: 16px !important;
+	}
+
 	@include media-query(desk){
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	@include media-query(portable){
@@ -40,7 +44,7 @@
 
 		height: 100%;
 
-		padding: 9% 0 12%;
+		padding: 7.5% 0 12%;
 
 		overflow: hidden;
 
@@ -58,7 +62,7 @@
 		small {
 			display: block;
 
-			margin: 5% 0 2.5% 0;
+			margin: 4.5% 0 3% 0;
 
 			font-size: 0.24em;
 			color: $a-contrast;
