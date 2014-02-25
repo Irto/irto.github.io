@@ -4,7 +4,7 @@
 	display: table;
 
 	margin: 2em auto;
-	padding: 0 0 0 4em;
+	padding: 0 0 0 0em;
 
 	list-style: none;
 
@@ -68,7 +68,8 @@
 		}
 
 		a {	
-			padding: 1em 1.2em;
+			display: inline-table;
+			padding: 0 1em 0;
 
 			color: $b-second;
 			font-family: 'Roboto';

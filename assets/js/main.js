@@ -12,6 +12,14 @@ requirejs([
 
             scrollFromTop(body, headerHeight, 750);
         }
+
+        document.querySelector('.btn--contact').onclick = function(){
+            var 
+                headerHeight = document.querySelector('.main__content--contact').offsetTop,
+                body = document.querySelector('body');
+
+            scrollFromTop(body, headerHeight, 750);
+        }
 });
 
 Math.easeOutCubic = function (t, b, c, d) {
@@ -29,11 +37,8 @@ function scrollFromTop(body, to, duration, current, start) {
 
     var difference = to - start,
         newPosition = Math.easeOutCubic(current, start, difference, duration);
-console.log(current, difference, start, 10, duration);
 
     setTimeout(function () {
-        console.log(difference, newPosition, to);
-
         body.scrollTop = newPosition;
         scrollFromTop(body, to, duration, current + 10, start);
     }, 10);
