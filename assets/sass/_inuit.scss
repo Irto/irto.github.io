@@ -226,16 +226,10 @@
 /**
  * User Interface
  */
-
-@import "ui/helpers";
-@import "ui/view";
-@import "ui/main";
 @import "ui/icon";
-@import "ui/languages";
+@import "ui/btn";
+@import "ui/main";
+@import "ui/about";
+@import "ui/contact";
+@import "ui/comedown";
 @import "ui/social-links";
-@import "ui/my-status";
-@import "ui/logo";
-@import "ui/ngsb-wrap";
-@import "ui/skill-list";
-@import "ui/article-list";
-@import "ui/form";

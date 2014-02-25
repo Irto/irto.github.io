@@ -62,7 +62,7 @@
 
 			.social-links--contrast & {
 				a {
-					color: #fff;
+					color: $b-contrast;
 				}
 			}
 		}
@@ -70,15 +70,16 @@
 		a {	
 			padding: 1em 1.2em;
 
-			color: #4d4d4d;
-			font-family: 'Open Sans';
-			font-size: 1.7em;
+			color: $b-second;
+			font-family: 'Roboto';
+			font-weight: 200;
+			font-size: 1.9em;
 			text-decoration: none;
 
 			@include transition(all 350ms linear);
 
 			.social-links--contrast & {
-				color: #fff;
+				color: $b-contrast;
 			}
 		}
 
@@ -94,7 +95,7 @@
 			width: 150%;
 
 			text-align: center;
-			font-size: 0.5em;
+			font-size: 0.7em;
 
 			opacity: 0;
 
@@ -102,5 +103,5 @@
 		}
 
 		.social-links__item__icon {
-
+			font-size: 1.3em;
 		}

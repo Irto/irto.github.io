@@ -71,7 +71,7 @@ $responsive:        true!default;
  * Responsiveness for widescreen/high resolution desktop monitors and beyond?
  * Note: `$responsive` variable above must be set to true before enabling this.
  */
-$responsive-extra:  false!default;
+$responsive-extra:  true!default;
 
 /**
  * Responsive push and pull produce a LOT of code, only turn them on if you
@@ -183,7 +183,7 @@ $brand-round:        4px!default;
 /**
  * Which objects and abstractions would you like to use?
  */
-$use-grids:         false!default;
+$use-grids:         true!default;
 $use-flexbox:       false!default;
 $use-columns:       false!default;
 $use-nav:           false!default;
@@ -228,14 +228,12 @@ $line-height-ratio: $base-line-height / $base-font-size;
     User Interface Colors
 \*------------------------------------*/
 
-$ac-orange: #6b5f9d;
-$ac-green: #85ae52;
-$ac-blue: #22a1c4;
-$ac-red: #ff7362;
-$ac-gray: #4d4d4d;
+$a-main: #273a45;
+$a-second: #fb8261;
+$a-second-contrast: #7a1301;
+$a-contrast: #fff;
 
-$c-orange: #ffbe00;
-$c-green: #93c054;
-$c-blue: #1fb4da;
-$c-red: #f67d42;
-$c-gray: #2D2D2D;
+$b-main: #f6f6ef;
+$b-second: #70838c;
+$b-contrast: $a-main;
+$b-highlight: $a-second;

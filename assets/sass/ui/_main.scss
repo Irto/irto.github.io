@@ -1,255 +1,131 @@
-body { 
-	background-image: inline-image('background.svg');
-	background-size: 100%;
-}
-
 .main {
-	position: fixed;
-	top: 1%;
+	font-size: 16px;
 
-	width: 100%;
-	height: 99%;
+	@include media-query(desk){
+		font-size: 14px;
+	}
 
-	background: #fff;
+	@include media-query(portable){
+		font-size: 12px;
+	}
 
-	overflow: hidden;
-
-	font-family: 'Roboto';
-	font-weight: 300;
+	@include media-query(palm){
+		font-size: 10px;
+	}
+	
+	a {
+		text-decoration: none;
+	}
 }
 
-	.main__view {
-		position: absolute;
-		top: 0;
-		left: 0%;
+	%main__pages {
+		position: relative;
 
+		display: table;
+
+		width: 100%;
 		height: 100%;
-		width: 40%;
-
-		@include transition(all 550ms 200ms ceaser($easeInCubic));
-
-		&.ng-enter {
-			left: -38%;
-
-			@include transition(all 550ms 200ms ceaser($easeInCubic));
-		}
-
-		.ng-leave + &.ng-enter {
-			left: -40%;
-
-			@include transition(all 550ms 950ms ceaser($easeInCubic));
-		}
-
-		&.ng-enter-active {
-			left: 0%;
-		}
-
-		&.ng-leave {
-			left: 0%;
-
-			@include transition(all 750ms ceaser($easeOutCubic));
-		}
-
-		&.ng-leave-active {
-			left: -38%;
-		}
 	}
 
-	.main__menu {
-		position: fixed;
-		top: 1%;
-		left: 0%;
-		z-index: 5;
+	.main__header {
+		@extend %main__pages;
+		top: 0;
 
-		height: 99%;
+		padding: 9% 0 12%;
 
-		background: #666666;
+		background: $a-main;
+	}
 
-		@include transition(all 750ms ceaser($easeOutCubic));
+	.main__title {
+		font-family: Montserrat;
+		font-weight: 700;
+		font-size: 15em;
+		color: $a-second;
 
-		.main__view.ng-leave-active ~ & {
-			left: 0%;
+		text-align: center;
 
-			@include transition(all 750ms ceaser($easeOutCubic));
-		}
+		small {
+			display: block;
 
-		.main__view ~ & {
-			left: 40%;
+			margin: 7.8% 0 0 0;
 
-			@include transition(all 550ms 200ms ceaser($easeInCubic));
-		}
+			font-size: 0.24em;
+			color: $a-contrast;
 
-		.menu {
-			position: relative;
-			top: 50%;
-
-			height: 300px;
-
-			margin: -150px 0 0 0;
-			padding: 0;
-
-			list-style: none;
-		}
-
-		.main__menu__back {
-			position: absolute;
-			left: -100%;
-			top: 1%;
-
-			font-size: 1.9em;
-			text-decoration: none;
-			color: $c-gray;
-
-			@include transition(all 750ms ceaser($easeOutCubic));
-
-			&:hover {
-				.menu__label {
-					bottom: 0;
-
-					@include transition(all 500ms ceaser($easeOutCubic));
-				}
-			}
-
-			.main__view--opened ~ & {
-				left: 125%;
-			}
-
-			.menu__label {
-				position: absolute;
-				bottom: 150%;
-
-				display: inline-block;
-				height: 100%;
-
-				text-indent: 0.6em;
-				font-size: 0.7em;
-				line-height: 1.9em;
-
-				@include transition(all 500ms ceaser($easeInCubic));
-			}
-		}
-
-		.menu__item {
-			position: relative;
-
-			margin: 0;
-			padding: 0;
-
-			color: #fff;
-
-			@include transition(all 500ms ease);
-
-			&:hover {
-				background: rgba(255, 255, 255, 0.2);
-
-				.menu__label {
-					left: 100%;
-
-					opacity: 1;
-				}
-			}
-
-			a {
-				display: block;
-
-				padding: 1.2em 1em;
-
-				color: #fff;
-				font-size: 1em;
-				text-decoration: none;
-
-				&:hover {
-					color: #fff;
-				}
-			}
-
-			&.menu__item--active {
-				@extend %theme-page--background;
-
-				@include transition(all 500ms ease);
-			}
-
-			.icon {
-				font-size: 2em;
-			}
-
-			.menu__label {
-				position: absolute;
-				top: 0em;
-				left: 150%;
-
-				display: block;
-				height: 100%;
-				width: 250%;
-
-				font-size: 1.4em;
-				text-align: center;
-				line-height: 3.3em;
-
-				opacity: 0;
-
-				@extend %theme-page--background;
-
-				@include vendor(transition, all 250ms ease);
-
-				&:before {
-					content: '';
-
-					position: absolute;
-					top: 50%;
-					left: -7px;
-
-					display: block;
-					width: 15px;
-					height: 15px;
-
-					margin-top: -8px;
-
-					@extend %theme-page--background;
-
-					@include vendor(transform, rotate(45deg));
-				}
+			@include media-query(palm){
+				font-size: 0.2em;
 			}
 		}
 	}
-		.menu__item {
-			&.menu__item--active {
-				@extend %theme-page--background;
-
-				.menu:not(:hover) & .menu__label {
-					left: 100%;
-
-					opacity: 1;
-				}
-			}
-		}
-
-		.menu__label {
-			@extend %theme-page--background;
-
-			&:before {
-				@extend %theme-page--background;
-			}
-		}
 
 	.main__content {
-		position: relative;
-		top: 0%;
-		left: 0%;
+		@extend %main__pages;
 
-		display: block;
+		padding: 5% 3% 9%;
 
-		@include transition(all 750ms ceaser($easeOutCubic));
+		color: $a-contrast;
 
-		.main__view.ng-leave-active ~ & {
-			left: 0%;
+		&.main__content--about {
+			top: 100%;
+			
+			background: $a-second;
 
-			@include transition(all 750ms ceaser($easeOutCubic));
+			h1, h2 {
+				color: $a-contrast;
+			}
 		}
 
-		.main__view ~ & {
-			left: 40%;
+		&.main__content--contact {
+			top: 200%;
 
-			@include transition(all 550ms 200ms ceaser($easeInCubic));
+			background: $b-main;
+
+			h1, h2 {
+				text-align: center;
+				color: $b-contrast;
+			}
+		}
+
+		%main__title {
+			font-family: Montserrat;
+			line-height: 1.1em;
+		}
+
+		h1 {
+			@extend %main__title;
+
+			font-size: 2.9em;
+		}
+
+		h2 {
+			@extend %main__title;
+
+			font-size: 2.7em;
+		}
+
+		p {
+			font-family: Roboto;
+			font-size: 1.8em;
+			font-weight: 200;
+			color: $a-second-contrast;
+		}
+	}
+
+	.main__footer {
+		position: relative;
+
+		width: 100%;
+
+		padding: 1% 3%;
+
+		background: $a-main;
+
+		font-family: Roboto;
+		font-size: 1.4em;
+		color: #fff;
+
+		a {
+			color: #fff;
+			text-decoration: none;
 		}
 	}
