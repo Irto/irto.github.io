@@ -1,4 +1,6 @@
 .main {
+	height: 100%;
+
 	font-size: 16px;
 
 	padding-top: 0.5em;
@@ -26,15 +28,16 @@
 	%main__pages {
 		position: relative;
 
-		display: table;
+		display: block;
 
 		width: 100%;
 		height: 100%;
+
+		overflow: hidden;
 	}
 
 	.main__header {
 		@extend %main__pages;
-		top: 0;
 
 		padding: 9% 0 12%;
 
@@ -71,8 +74,6 @@
 		color: $a-contrast;
 
 		&.main__content--about {
-			top: 100%;
-			
 			background: $a-second;
 
 			h1, h2 {
@@ -81,8 +82,6 @@
 		}
 
 		&.main__content--contact {
-			top: 200%;
-
 			background: $b-main;
 
 			h1, h2 {
