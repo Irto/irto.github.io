@@ -1,0 +1,40 @@
+.btn {
+	display: inline-block;
+
+	padding: 0.4em 0;
+
+	border: 1px solid $a-contrast;
+	background: $a-second;
+
+	@include vendor(border-radius, 5px);
+
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 1.5em;
+	color: $a-contrast;
+	text-align: center;
+	text-transform: uppercase;
+
+	@include transition(all 400ms ease);
+
+	&:hover, &:focus {
+		outline: 0 none;
+		background: $a-contrast;
+
+		color: $a-second;
+	}
+}
+
+	.btn--block-half {
+		width: 48%;
+
+		&:last-child {
+			float: right;
+		}
+
+		@include media-query(portable){
+			width: 100%;
+
+			margin: 0.5em 0;
+		}
+	}

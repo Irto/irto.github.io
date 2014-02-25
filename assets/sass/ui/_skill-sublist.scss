@@ -1,0 +1,39 @@
+.skill-sublist {
+	margin: 2em 0 0 0;
+
+	@include media-query(portable){
+		font-size: 1.1em;
+	}
+}
+
+	.skill-sublist__item {
+		display: table;
+
+		width: 100%;
+
+		margin-top: 1em;
+
+		font-family: Roboto;
+	}
+
+		.skill-sublist__item__title {
+			font-size: 1.8em;
+			font-weight: 300;
+			line-height: 1em;
+			
+			small {
+				font-size: 0.7em;
+				font-weight: 100;
+				line-height: 0.6em;
+			}
+		}
+
+		.skill-sublist__item__knowbar {
+			display: block;
+
+			height: 0.2em;
+
+			margin: 0.4em 0 0 0;
+
+			background: #fff;
+		}
