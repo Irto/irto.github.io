@@ -8,7 +8,7 @@
 	background-image: inline-image('background.svg');
 	background-size: 100% auto;
 
-	@include media-query(desk-wide){
+	@media only screen and (min-width:1600px) { 
 		font-size: 16px !important;
 	}
 
