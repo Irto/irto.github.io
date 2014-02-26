@@ -24,9 +24,9 @@
     <link rel="stylesheet" href="assets/stylesheets/screen.css">
 </head>
 <body ng-app="irtoApp">
-    <section class="main">
+    <section class="main" itemscope itemtype="http://schema.org/Person">
         <header class="main__header">
-            <h1 class="main__title">Olá! <small>Meu nome é <strong>Israel Trindade</strong><br>e sou <strong>Desenvolvedor Web</strong></small></h1>
+            <h1 class="main__title">Olá! <small>Meu nome é <strong itemprop="name">Israel Trindade</strong><br>e sou <strong itemprop="jobTitle">Desenvolvedor Web</strong></small></h1>
             <a class="comedown">aproxime-se <i class="comedown__icon"></i></a>
         </header>
         <div class="main__content main__content--about">
@@ -149,9 +149,11 @@
                 </aside>
             </div>
         </div>
-        <div class="contact main__content main__content--contact">
+        <div class="contact main__content main__content--contact text--center">
             <h2 class="contact__title">Agora já nos conhecemos, ou melhor:<br> você me conhece.</h2>
-            <a href="mailto:irto@ymail.com" class="contact__email">irto@ymail.com</a>
+            <a href="call:5521985980055" class="contact__phone" itemprop="telephone">(21) 98598-0055</a>
+            <p class="contact__or">ou</p>
+            <a href="mailto:irto@ymail.com" class="contact__email" itemprop="email">irto@ymail.com</a>
             <ul class="social-links">
                 <li class="social-links__item social-links__item--envelope"><a href="mailto:irto@ymail.com"><i class="social-links__item__icon icon icon--envelope"></i><span class="social-links__item__title">E-mail</span></a></li>
                 <li class="social-links__item social-links__item--google-plus"><a href="https://plus.google.com/+IsraelTrindadeIRTO"><i class="social-links__item__icon icon icon--google-plus"></i><span class="social-links__item__title">Google Plus</span></a></li>
@@ -162,9 +164,9 @@
         </div>
         <footer class="main__footer">
             <div class="hosted one-whole">
-                <span>Hosted by <a href="http://pages.github.com/">Github</a></span>
+                <span>Hosted by <a href="https://github.com/Irto/irto.github.io">Github</a></span>
 
-                <span class="float--right">Israel Rocha Trindade Oliveira</span>
+                <div class="float--right" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Anchieta, <span itemprop="addressLocality">Rio de Janeiro</span> -  <span itemprop="addressRegion">RJ</span> <span itemprop="addressCountry">Brasil</span></div>
             </div>
         </footer>
     </section>
