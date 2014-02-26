@@ -19,7 +19,7 @@
 	@include media-query(palm){
 		font-size: 9px;
 	}
-	
+
 	a {
 		text-decoration: none;
 	}
@@ -40,7 +40,7 @@
 
 		height: 100%;
 
-		padding: 7.5% 0 12%;
+		padding: 6% 0;
 
 		overflow: hidden;
 
@@ -49,7 +49,6 @@
 
 	.main__title {
 		font-family: Montserrat;
-		font-weight: 700;
 		font-size: 15em;
 		color: $a-second;
 
@@ -58,9 +57,9 @@
 		small {
 			display: block;
 
-			margin: 4.5% 0 3% 0;
-
-			font-size: 0.24em;
+            font-family: Roboto;
+			font-size: 0.2em;
+            font-weight: 300;
 			color: $a-contrast;
 
 			@include media-query(palm){
@@ -72,16 +71,16 @@
 	.main__content {
 		@extend %main__pages;
 
-		padding: 8em 3% 8em;
+		padding: 6% 3%;
 
 		color: $a-contrast;
 
 		&.main__content--about {
 			background: $a-second;
 
-			h1, h2 {
-				color: $a-contrast;
-			}
+			//h1, h2 {
+			//	color: $a-contrast;
+			//}
 		}
 
 		&.main__content--contact {
@@ -100,17 +99,17 @@
 			margin-bottom: 1em;
 		}
 
-		h1 {
-			@extend %main__title;
-
-			font-size: 2.9em;
-		}
-
-		h2 {
-			@extend %main__title;
-
-			font-size: 2.7em;
-		}
+		//h1 {
+		//	@extend %main__title;
+        //
+		//	font-size: 2.9em;
+		//}
+        //
+		//h2 {
+		//	@extend %main__title;
+        //
+		//	font-size: 2.7em;
+		//}
 
 		p {
 			font-family: Roboto;
@@ -125,13 +124,13 @@
 
 		width: 100%;
 
-		padding: 1% 3%;
+		padding: 1.5% 3%;
 
 		background: $a-main;
 
 		font-family: Roboto;
 		font-size: 1.4em;
-		font-weight: 100;
+		font-weight: 400;
 		color: #fff;
 
 		a {
