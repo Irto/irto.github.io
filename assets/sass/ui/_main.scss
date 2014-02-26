@@ -16,12 +16,12 @@
 		font-size: 11px;
 	}
 
-	@include media-query(portable){
-		font-size: 10.5px;
+	@include media-query(lap){
+		font-size: 12px;
 	}
 
 	@include media-query(palm){
-		font-size: 9px;
+		font-size: 9.5px;
 	}
 
 	a {
