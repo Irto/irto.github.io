@@ -23,7 +23,7 @@
 		height: 10em;
 
 		margin: 0 0 1em 0;
-		padding: 2em 7%;
+		padding: 2em 0 2em 7%;
 
 		overflow: hidden;
 
@@ -31,8 +31,12 @@
 
 		@include transition(height 500ms ease, top 500ms ease, background 250ms ease, z-index 1ms 500ms linear);
 
+		@media only screen and (min-width: 1440px) and (max-width: 1560px){
+			padding-left: 5%;
+		}
+
 		@include media-query(desk){
-			padding: 1.7em 5%;
+			padding: 1.7em 0 1.7em 5%;
 
 			height: 8.5em;
 
@@ -99,7 +103,7 @@
 			display: inline-table;
 
 			height: 4em;
-			
+
 			font-family: Roboto;
 			font-weight: 400;
 			font-size: 2.2em;
@@ -108,6 +112,13 @@
 
 			margin: -0.6em 0 0 1.5em;
 
+			@media only screen and (min-width: 1440px) and (max-width: 1560px){
+				margin-left: 1em;
+			}
+			
+			@media only screen and (min-width: $desk-wide-start) and (max-width: 1440px){
+				margin: -0.6em 0 0 1em;
+			}
 
 			@include media-query(desk){
 				margin: -0.6em 0 0 0.5em;
