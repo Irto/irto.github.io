@@ -3,7 +3,6 @@ requirejs.config({
 });
 
 requirejs([
-    'hammer',
     ], function(angular, app) {
         document.querySelector('.comedown').onclick = function(){
             var 
