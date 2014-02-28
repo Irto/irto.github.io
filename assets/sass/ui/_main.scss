@@ -97,23 +97,20 @@
 		}
 
 		%main__title {
-			font-family: Montserrat;
-			line-height: 1.3em;
-
 			margin-bottom: 1em;
 		}
 
-		//h1 {
-		//	@extend %main__title;
-        //
-		//	font-size: 2.9em;
-		//}
-        //
-		//h2 {
-		//	@extend %main__title;
-        //
-		//	font-size: 2.7em;
-		//}
+		h1 {
+			@extend %main__title;
+        
+			font-size: 2.9em;
+		}
+        
+		h2 {
+			@extend %main__title;
+        
+			font-size: 2.7em;
+		}
 
 		p {
 			font-family: Roboto;
